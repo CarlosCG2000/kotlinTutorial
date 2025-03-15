@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mostrar todos -->
+    <item
+        android:id="@+id/filter_all"
+        android:title="@string/all"/>
+
+    <!-- Mostrar solo fotos -->
+    <item
+        android:id="@+id/filter_photos"
+        android:title="@string/photos"/>
+
+    <!-- Mostrar solo videos -->
+    <item
+        android:id="@+id/filter_videos"
+        android:title="@string/videos"/>
+</menu>

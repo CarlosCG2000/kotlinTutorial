@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    ¿Para qué sirve este RecyclerView?
+Este RecyclerView está configurado para mostrar una cuadrícula de elementos (con 2 columnas). Se suele usar para mostrar imágenes, listas de productos, galerías, etc.
+    -->
+    <!--
+    - clipToPadding="false": Permite que los ítems dentro del RecyclerView se dibujen fuera del área de padding.
+    - layoutManager="androidx.recyclerview.widget.GridLayoutManager": Define que el RecyclerView usará un GridLayoutManager, lo que significa que los elementos se organizarán en una cuadrícula en lugar de una lista lineal.
+    - app:spanCount="2": Indica que la cuadrícula tendrá 2 columnas.
+    - tools:listitem="@layout/view_media_item": Muestra en el Android Studio Preview cómo se verán los elementos dentro del RecyclerView, usando el layout view_media_item.xml.
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/view_media_item"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</FrameLayout>
+
