@@ -89,7 +89,7 @@ Proyecto `1-pruebas-intro`
     + Subcarpeta `detail`:
         - Fichero `DetailActivity.kt`: es un `class` para la pantalla secundaria (componente Activity).
 
-+ Subcarpeta de recursos `layout`:
+* Carpeta de recursos `layout`:
     - Fichero `activity_main.xml`: vista principal (listado)
     - Fichero `view_media_item.xml`: vista de un elemento del listado
     - Fichero `activity_detail.xml`: vista de un imagen de un elemento del listado
